@@ -7,7 +7,7 @@ import {
   useAdvancedMarkerRef,
 } from '@vis.gl/react-google-maps';
 import { MapPin, Navigation, ExternalLink } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 
 interface LocationApiResponse {
   status: 'OK' | 'UNAVAILABLE' | 'QUOTA_EXCEEDED';

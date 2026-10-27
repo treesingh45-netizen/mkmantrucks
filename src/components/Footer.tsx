@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 
 export const Footer: React.FC = () => {
   const { config, setCookieModalOpen, setOwnerModalOpen } = useSiteConfig();

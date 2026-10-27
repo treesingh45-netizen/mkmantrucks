@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight, CheckCircle2, Phone } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { SmartImage } from '../components/SmartImage';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 import { BusinessMapSection } from '../components/BusinessMapSection';

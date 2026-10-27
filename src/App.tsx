@@ -6,7 +6,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { APIProvider } from '@vis.gl/react-google-maps';
-import { SiteConfigProvider } from './data/siteConfig';
+import { SiteConfigProvider } from './config/siteConfig';
 import { SeoHead } from './components/SeoHead';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';

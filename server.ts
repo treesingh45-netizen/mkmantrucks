@@ -24,7 +24,7 @@ const GMP_ATTRIBUTION_ID = 'gmp_mcp_codeassist_v1_aistudio';
 // Private server-side storage for quote enquiries (never exposed publicly via any GET route)
 const DATA_DIR = process.env.VERCEL
   ? path.join(os.tmpdir(), 'mk-removals-data')
-  : path.join(__dirname, 'data');
+  : path.join(__dirname, 'server-data');
 const PRIVATE_QUOTES_FILE = path.join(DATA_DIR, 'quotes.private.json');
 
 interface StoredQuoteRecord {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, ArrowRight } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 
 interface PageCtaSectionProps {
   eyebrow?: string;

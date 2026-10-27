@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Truck } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 
 interface SmartImageProps {
   imageKey: string;

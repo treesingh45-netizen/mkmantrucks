@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 
 export const PrivacyPolicyPage: React.FC = () => {

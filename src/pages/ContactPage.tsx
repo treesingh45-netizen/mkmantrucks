@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Phone, Mail, MessageCircle, MapPin, ExternalLink } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 import { QuoteForm } from '../components/QuoteForm';
 import { ComplexMovePlanner } from '../components/ComplexMovePlanner';

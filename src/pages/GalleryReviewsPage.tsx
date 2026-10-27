@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Maximize2, Mail, MessageCircle } from 'lucide-react';
-import { GALLERY_CATALOG, GalleryItem, useSiteConfig } from '../data/siteConfig';
+import { GALLERY_CATALOG, GalleryItem, useSiteConfig } from '../config/siteConfig';
 import { SmartImage } from '../components/SmartImage';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 import { PageCtaSection } from '../components/PageCtaSection';

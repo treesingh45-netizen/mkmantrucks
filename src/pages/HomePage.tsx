@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, Phone, MapPin, Check } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { SmartImage } from '../components/SmartImage';
 import { PageCtaSection } from '../components/PageCtaSection';
 

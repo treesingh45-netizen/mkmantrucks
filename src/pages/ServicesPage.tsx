@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Check, MessageCircle, Phone } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { SmartImage } from '../components/SmartImage';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 import { ComplexMovePlanner } from '../components/ComplexMovePlanner';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Phone, Mail, MessageCircle, MapPin } from 'lucide-react';
-import { useSiteConfig } from '../data/siteConfig';
+import { useSiteConfig } from '../config/siteConfig';
 import { SmartImage } from '../components/SmartImage';
 import { PageHeroBanner } from '../components/PageHeroBanner';
 import { PageCtaSection } from '../components/PageCtaSection';

@@ -186,3 +186,22 @@ test('serverless /api/quotes handler validates and records a valid quote enquiry
   assert.match(String(jsonBody.reference || ''), /^MK-\d{8}-\d{4}$/);
 });
 
+test('src/config/siteConfig.tsx is Git-trackable and maps all local stock images', async () => {
+  const fs = await import('node:fs');
+  const path = await import('node:path');
+  const gitignore = fs.readFileSync(path.resolve(process.cwd(), '.gitignore'), 'utf-8');
+  const lines = gitignore.split(/\r?\n/).map((l) => l.trim());
+  assert.equal(lines.includes('data/'), false, '.gitignore must not have an unanchored data/ pattern');
+  assert.equal(
+    fs.existsSync(path.resolve(process.cwd(), 'src/config/siteConfig.tsx')),
+    true,
+    'src/config/siteConfig.tsx must exist'
+  );
+  const { STOCK_MEDIA_DEFAULTS } = await import('../config/siteConfig');
+  for (const [key, item] of Object.entries(STOCK_MEDIA_DEFAULTS)) {
+    const publicFile = path.resolve(process.cwd(), 'public', item.src.replace(/^\//, ''));
+    assert.equal(fs.existsSync(publicFile), true, `Missing public stock asset for ${key}: ${item.src}`);
+  }
+});
+
+

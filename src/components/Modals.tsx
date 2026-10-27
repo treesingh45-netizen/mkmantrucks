@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { X, RotateCcw, Plus, Trash2 } from 'lucide-react';
-import { STOCK_MEDIA_DEFAULTS, useSiteConfig } from '../data/siteConfig';
+import { STOCK_MEDIA_DEFAULTS, useSiteConfig } from '../config/siteConfig';
 
 export const CookieSettingsModal: React.FC = () => {
   const { config, updateConfig, cookieModalOpen, setCookieModalOpen } = useSiteConfig();
