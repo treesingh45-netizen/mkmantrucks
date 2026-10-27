@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B2348;
+  --color-navy-deep: #07172F;
+  --color-surface-light: #F5F7FA;
+  --color-surface-mist: #E8EDF4;
+  --color-ink: #283548;
+  --color-ink-muted: #667085;
+
+  --font-display: "The Seasons", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-signature: "Alex Brush", cursive;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #283548;
+    background-color: #FFFFFF;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-signature {
+    font-family: var(--font-signature);
+  }
+}
